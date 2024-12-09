@@ -1,0 +1,5 @@
+{
+  "fullName": "${fullName}",
+  "age": ${age?c},
+  "dateOfBirth": "${formatDate(dateOfBirth, 'MM/yyyy/dd')}"
+}
