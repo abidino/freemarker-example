@@ -1,0 +1,5 @@
+{
+  "productName": "${productName}",
+  "price": ${price?c},
+  "quantity": ${quantity}
+}

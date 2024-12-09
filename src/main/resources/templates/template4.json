@@ -1,0 +1,13 @@
+{
+  "fullName": "${name}",
+  "age": ${age?c},
+  "addresses": [
+    <#list addresses as address>
+    {
+      "city": "${address.city}",
+      "postalCode": "${address.postalCode}",
+      "cityPostalCode": "${address.city} + ${address.postalCode}"
+    }     <#if address_has_next>,</#if>
+    </#list>
+    ]
+}

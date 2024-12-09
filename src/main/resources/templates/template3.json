@@ -1,0 +1,8 @@
+{
+  "fullName": "${name}",
+  "age": ${age?c},
+  "location": {
+    "city": "${address.city}",
+    "postalCode": "${address.postalCode}"
+  }
+}
