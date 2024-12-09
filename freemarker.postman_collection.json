@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "4ca64c50-a5d0-417a-b33c-aab1d344fe9a",
+		"name": "freemarker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14295019"
+	},
+	"item": [
+		{
+			"name": "template3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Abidino Doe\",\n  \"address\": {\n    \"city\": \"Istanbul\",\n    \"postalCode\": \"10001\"\n  },\n  \"age\": 30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/json/transform/template3.json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"json",
+						"transform",
+						"template3.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "template2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productName\": \"Laptop\",\n    \"price\": 1300,\n    \"quantity\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/json/transform/template2.json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"json",
+						"transform",
+						"template2.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "template1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Doe\",\n    \"age\": 30,\n    \"city\": \"New York\",\n    \"postalCode\": \"10001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/json/transform/template1.json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"json",
+						"transform",
+						"template1.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "template4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Jane Doe\",\n  \"age\": 25,\n  \"addresses\": [\n    {\n      \"city\": \"Los Angeles\",\n      \"postalCode\": \"90001\"\n    },\n    {\n      \"city\": \"San Francisco\",\n      \"postalCode\": \"94105\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/json/transform/template4.json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"json",
+						"transform",
+						"template4.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
