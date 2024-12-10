@@ -7,9 +7,10 @@
 * Dinamik içerikler ${alanAdi} şeklinde tanımlanır.
 * Döngüler ve şart blokları için Freemarker’ın kontrol direktifleri kullanılır.
 
+
 ## 2. Şablon Yapıları
 
-#### 2.1. Düz Nesne (Object) Yapısı
+#### `2.1. Düz Nesne (Object) Yapısı`
 
 Düz nesne, bir anahtar-değer çiftini temsil eder. Şablon örneği:
 
@@ -23,7 +24,8 @@ Düz nesne, bir anahtar-değer çiftini temsil eder. Şablon örneği:
 * ${fullName}: Dinamik bir alan, değer daha sonra işleme sırasında doldurulur.
 * ${age}: Sayısal bir alan için kullanılır.
 
-#### 2.2. Dizi (Array) Yapısı
+
+#### `2.2. Dizi (Array) Yapısı`
 
 Bir dizi, birden fazla nesne içerir. #list direktifi kullanılarak tanımlanır.
 
@@ -44,7 +46,8 @@ Bir dizi, birden fazla nesne içerir. #list direktifi kullanılarak tanımlanır
 * ${user.name}: Dizinin her elemanından name alanını getirir.
 * <#if user_has_next>,</#if>: Son elemandan sonra virgül koymamak için kullanılır.
 
-#### 2.3. Tarih Formatı
+
+#### `2.3. Tarih Formatı`
 Tarih alanları için belirli bir format kullanılır. Tarihler dinamik olarak işlenir ve formatları dönüştürülebilir.
 
 Şablon Örneği:
@@ -56,7 +59,8 @@ Tarih alanları için belirli bir format kullanılır. Tarihler dinamik olarak i
 * ?string('MM/yyyy/dd'): Tarihi MM/yyyy/dd formatına dönüştürür.
 * Tarih alanlarında her zaman ISO-8601 standardında tarih gönderilmeli, örneğin: 2023-05-20.
 
-#### 2.4. Şartlı (Conditional) Alanlar
+
+#### `2.4. Şartlı (Conditional) Alanlar`
 
 Belli bir koşula bağlı olarak bazı alanlar işlenir.
 
@@ -70,7 +74,8 @@ Belli bir koşula bağlı olarak bazı alanlar işlenir.
 * <#if> ve <#else>: Koşullu ifadeleri işler.
 * Eğer age 18 veya daha büyükse, isAdult alanı true olur, aksi halde false.
 
-#### 2.5. Sayısal Alanlar
+
+#### `2.5. Sayısal Alanlar`
 Sayısal değerler, herhangi bir formatlama yapılmadan doğrudan işlenir. Örneğin:
 
 ```json
@@ -87,7 +92,8 @@ Eğer sayı yuvarlanacak veya formatlanacaksa:
 ```
 * ?string['#.##']: Sayıyı iki ondalık basamakla sınırlar.
 
-#### Customer Dönüstürmeler
+
+#### `2.6. Özel Dönüstürmeler`
 
 Bazı durumlarda, Freemarker’ın sağladığı varsayılan işlevler yeterli olmayabilir. Bu gibi durumlarda, geliştiriciler özel dönüştürme işlemleri (Custom Converter) yazarak ihtiyaçlarınıza uygun çözüm üretebilir.
 
@@ -99,6 +105,7 @@ Bazı durumlarda, Freemarker’ın sağladığı varsayılan işlevler yeterli o
 ```
 * dateOfBirth: İşlenecek veri.
 * 'MM/yyyy/dd': İstenen özel format.
+
 
 ## 3. Örnek Tam Şablon
 
@@ -120,6 +127,7 @@ Bazı durumlarda, Freemarker’ın sağladığı varsayılan işlevler yeterli o
   }
 }
 ```
+
 
 ## 4. Freemarker Hakkında Kaynaklar
 
